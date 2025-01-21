@@ -1,0 +1,68 @@
+/* Reset margin dan padding untuk seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background-pic.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Selalu setinggi viewport */
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Gunakan 100% lebar untuk memastikan fleksibilitas */
+    max-width: 400px; /* Batasi lebar agar tetap terjaga */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw; /* Padding fleksibel berdasarkan lebar viewport */
+    gap: 20px; /* Jarak antar elemen */
+    text-align: center;
+    transition: all 0.3s ease; /* Efek halus saat berubah ukuran */
+}
+
+input[type="password"] {
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 80%; /* Lebar fleksibel */
+    max-width: 300px; /* Maksimal lebar */
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease; /* Animasi saat ukuran berubah */
+}
+
+input[type="password"]:focus {
+    border-color: #0066ff;
+    box-shadow: 0 0 8px rgba(0, 102, 255, 0.4);
+}
+
+button {
+    background-color: #0066ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0057cc;
+}

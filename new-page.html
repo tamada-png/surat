@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter for Loved Girl, Halida</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("background-pic.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      /* Menggunakan font yang lebih umum agar tampilannya seragam */
+    }
+
+    .box {
+      background-image: url("letter-box.png");
+      background-size: contain;
+      /* Menyesuaikan ukuran background agar masuk dalam box */
+      background-position: center;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      /* Menggunakan 90% lebar layar agar responsif */
+      max-width: 600px;
+      /* Membatasi lebar box agar tidak terlalu besar */
+      height: auto;
+      /* Menyesuaikan tinggi box dengan konten */
+      max-height: 80%;
+      /* Membatasi tinggi maksimal box */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      margin: 20px;
+      overflow-y: auto;
+      box-sizing: border-box;
+      position: relative;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 1.2rem;
+      /* Menyesuaikan ukuran font agar lebih fleksibel */
+      text-align: center;
+      width: 100%;
+      word-wrap: break-word;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      margin: 0;
+      padding: 10px;
+    }
+
+    /* Responsif untuk tablet dan perangkat dengan ukuran medium */
+    @media (max-width: 1024px) {
+      .box {
+        width: 85%;
+        /* Box lebih kecil pada perangkat tablet */
+        padding: 15px;
+      }
+
+      .text {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Responsif untuk perangkat dengan ukuran kecil (smartphone) */
+    @media (max-width: 768px) {
+      .box {
+        width: 90%;
+        /* Box menyesuaikan layar ponsel */
+        padding: 15px;
+      }
+
+      .text {
+        font-size: 1rem;
+        /* Ukuran font disesuaikan agar mudah dibaca di ponsel */
+      }
+    }
+
+    /* Responsif untuk perangkat dengan ukuran sangat kecil (smartphone dengan layar lebih kecil) */
+    @media (max-width: 480px) {
+      .box {
+        width: 95%;
+        /* Box lebih kecil di layar lebih kecil */
+        padding: 10px;
+      }
+
+      .text {
+        font-size: 0.95rem;
+        /* Ukuran font lebih kecil di layar sangat kecil */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <p>Untuk yang mulia Halida atau aliduy</p>
+    <p>aloo aliduy, aku mau minta maaf yaa buat kamu, aku ngerasa bersalah banget loo, aku juga ga mau bikin kamu sedih,
+      ngambek, atau emosi emosi yang sebenernya gaperlu dikeluarin, aku salah kali ini ndaa, maafin yaa 🙏🙏🙏</p>
+    <p>aku nyesel banget loo, jujur aku udaa selesai sama dia, tapi karena ada suatu hal yang kamu ucapin jadi malah
+      keluar kata itu, aku nyesel banget.</p>
+      <p>aku tau aku salah. aku janji ga bakal kayak gitu lagi 😊☝</p>
+    <p>Dari orang yang sayang sama Halida</p>
+    <p>Tamacil</p>
+  </div>
+</body>
+
+</html>

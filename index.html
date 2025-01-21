@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Buat Yang Mulia Haliduyy</title>
+</head>
+<body>
+  <div class="box">
+    <input type="password" id="password" placeholder="Password" />
+    <button class="btn" id="submitBtn">Submit</button>
+    <p id="errorMessage" style="color: red; display: none; margin-top: 10px;">No no, aliduy passwordnya</p>
+  </div>
+
+  <script>
+    const passwordInput = document.getElementById("password");
+    const submitButton = document.getElementById("submitBtn");
+    const errorMessage = document.getElementById("errorMessage");
+
+    // Kata sandi yang valid
+    const correctPassword = "aliduy";
+
+    // Tambahkan event listener pada tombol submit
+    submitButton.addEventListener("click", function () {
+      const enteredPassword = passwordInput.value;
+
+      if (enteredPassword === correctPassword) {
+        // Password benar, arahkan ke halaman baru
+        window.location.href = "new-page.html";
+      } else {
+        // Password salah, tampilkan pesan error
+        errorMessage.style.display = "block";
+      }
+    });
+
+    // Sembunyikan pesan error ketika pengguna mengetik ulang
+    passwordInput.addEventListener("input", function () {
+      errorMessage.style.display = "none";
+    });
+  </script>
+</body>
+</html>
